@@ -1,0 +1,144 @@
+.App {
+  display: flex;
+  justify-content: center;  
+}
+
+.appContainer {
+  width: 400px;
+}
+
+.content {
+  border-radius: 10px;
+  border: 4px solid #4990e2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+h1 {
+  font-weight: normal;
+  text-align: center;
+  font-variant-caps: all-petite-caps;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+/* homepage ****/
+
+.leaderboard {
+  margin-top: 15px;
+  width: 100%;
+}
+
+.leaderboard h2 {
+  color: black;
+  background-color: #B2CFF0;
+  text-align: center;
+  align-content: center;
+  padding: 10px;
+  margin: 0;
+  background-clip: padding-box;
+  font-variant-caps: all-petite-caps;
+}
+
+.leaderboard tr:nth-child(odd).currentTeam td, .leaderboard tr:nth-child(even).currentTeam td{
+  font-weight: bold;
+  color: #2A0E00;
+  filter: contrast(140%);
+}
+
+.leaderboard tr.currentTeam td:nth-child(2)::after { content: ' ◀'; }
+
+.leaderboard table {
+  width: 100%;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-collapse: collapse;
+}
+.leaderboard tr { text-align: center; }
+.leaderboard tr:nth-child(even) td { background-color: #D6DADF;}
+.leaderboard tr:nth-child(odd) td { background-color: #B2CFF0;}
+.leaderboard tr:nth-child(1) td { background-color: #FF8344;}
+.leaderboard tr:nth-child(2) td { background-color: #FFD644;}
+.leaderboard tr *:nth-child(2) {text-align: left;}
+.leaderboard tr *:nth-child(3) {text-align: right;}
+.leaderboard td, .leaderboard th { padding: 10px; } 
+.leaderboard th { 
+  font-weight: normal;
+  font-variant-caps: all-small-caps;
+  font-size: 14px;
+}
+
+.selectTeam {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1 1;
+}
+
+.selectTeam button {
+  font-size: 26px;
+  font-weight: bold;
+
+  background-color: #4990e2;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.selectTeam input { padding: 10px; width: 80%;}
+.selectTeam p {margin-bottom: 4px;}
+.selectTeam .cont2 { width:200px}
+
+/* Teampage ***/
+
+.lazy {color: gray; line-height: 24px; margin-bottom: 8px;}
+.lazy span {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  background-color: #f3f3f3;
+  padding: 5px;
+}
+
+.big-button {
+  display: block;
+  width: 97%;
+  border: none;
+  padding: 14px 28px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 26px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  background-color: #FF8344;
+}
+
+.click-stats {
+  width: 100%;
+}
+
+.click-stats th {
+  font-weight: normal;
+  font-variant-caps: all-small-caps;
+  font-size: 14px;
+}
+
+.click-stats td {
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  font-size: 26px;
+}
+
+/* colors http://paletton.com/#uid=33B0v0knxQw47W8bQVivRTiXON4 */
